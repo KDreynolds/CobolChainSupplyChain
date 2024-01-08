@@ -1,0 +1,24 @@
+[package]
+name = "rust_blockchain_supply_chain"
+version = "0.1.0"
+authors = ["Your Name <your.email@example.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.9.8"
+chrono = "0.4.19"
+
+[lib]
+name = "rust_blockchain_supply_chain"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rust_blockchain_supply_chain_executable"
+path = "src/main.rs" # You will need to create this file if you want a binary
+
+[features]
+default = []
